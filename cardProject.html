@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-color: cadetblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .card{
+            height: 400px;
+            width: 250px;
+            background-color: white;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 14px;
+            
+
+        }
+        #img1{
+            height: 200px;
+            width: 90%;
+            padding: 10px;
+            border-radius: 18px;
+        }
+        #heading{
+            text-align: center;
+            font-weight: bolder;
+            font-size: larger;
+        }
+        #para{
+            text-align: center;
+        }
+        #img2{
+            height: 150px;
+            width: 100%;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        #amountBox{
+            background-color: rgb(7, 7, 43);
+            height: 11%;
+            width: 85%;
+            display: flex;
+            flex-direction: row;
+            border-radius: 7px;
+            justify-content: space-around;
+            padding-right: 4px;
+            color: #cccccc;
+            
+            
+        }
+        #amountBox a{
+            color: #cccccc;
+            text-decoration: none;
+        }
+        #amountBox a:hover{
+            color: #108805;
+        }
+        .leftBox{
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+            /* padding-top: 4px; */
+        }
+        .leftBox img{
+            height: 45px;
+            width: 30%;
+            border-radius: 7px;
+            padding: 4px;
+            
+        }
+        .leftBox p{
+            font-size:0.9rem;
+            font-weight: bold;
+            display: flex;
+            /* align-items: center;
+            justify-content: center; */
+            flex-direction: column;
+            position: relative;
+            top: 4px;
+            
+        }
+        .rightBox{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .btnBox{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-weight: bolder;
+        }
+        #btn1:hover{
+            cursor: pointer;
+        }
+        #btn2:hover{
+            cursor: pointer;
+        }
+        #btn1{
+            height: 30px;
+            width: 210px;
+            border-radius: 5px;
+            border: none;
+            background-color: rgb(7, 7, 43);
+            color: #cccccc;
+            font-weight: bold;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19),0 6px 6px rgba(0,0,0,0.23);
+         
+        }
+        #btn2{
+            height: 30px;
+            width: 210px;
+            border: none;
+            background-color: white;
+            font-weight: bold;
+        }
+        .card2{
+            height: 400px;
+            width: 750px;
+            background-color: rgb(21, 7, 63);
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+        .card2 img{
+            height: 400px;
+            width: 500px;
+        }
+        .leftBoxCard2{
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+            padding: 25px;
+
+        }
+        .footerHeader{
+            display: flex;
+            justify-content: space-between;
+        }
+        .footerHeader h4{
+            font-size: larger;
+        }
+        .footerHeader p{
+            font-size: small;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="qr code.png" alt="" id="img1">
+            <h4 id="heading">Improve your front-end skills by developing projects</h4>
+            <p id="para">Search the w3 School website for the best solution of your programming language and understand the topic within 5 minutes</p>
+        </div>
+        <div class="card">
+            <img src="tech.webp" alt="" id="img2">
+            <div class="textBox">
+                <h4 id="heading">Order Summary</h4>
+                <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio, blanditiis.</p>
+            </div>
+            <div id="amountBox">
+                <div class="leftBox">
+                    <img src="tech2.jpg" alt="">
+                    <div class="amountPara">
+                       <p>Annual Plan</p>
+                       <p>$9.99 year</p>
+                    </div>
+                    
+                </div>
+                <div class="rightBox">
+                   
+                    <a href="">Change</a>
+                </div>
+            </div>
+            <div class="btnBox">
+                <input type="button" value="Proceed to Payment" id="btn1">
+                <input type="button" value="Cancel Order" id="btn2">
+            </div>
+        </div>
+        <div class="card2">
+            <div class="leftBoxCard2">
+                <h2>Get insights that help your business grow</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur, explicabo rem. Magnam provident quaerat rerum dolorem, autem culpa adipisci ex, natus eum, nulla ipsum error?</p>
+                <div class="footerHeader">
+                <div class="first">
+                    <h4>10k+</h4>
+                    <p>comment</p>
+                </div>
+                <div class="second">
+                    <h4>214</h4>
+                    <p>Paid users</p>
+                </div>
+                <div class="third">
+                    <h4>12M+</h4>
+                    <p>Views</p>
+                </div>
+                </div>
+             
+
+            </div>
+            <div class="rightBoxCard2">
+                <img src="tech2.jpg" alt="">
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
